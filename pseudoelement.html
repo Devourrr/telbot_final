@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가상 엘리먼트</title>
+<style>
+p#p1::first-line { /*#p1의 첫번째줄을 선택 */
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p#p2::first-letter {
+	 color: #ff0000;
+  	 font-size: xx-large;
+}
+
+h1#id1::before {
+  content: url(https://www.w3schools.com/css/smiley.gif);
+}
+h1#id1::after {
+  content: url(https://www.w3schools.com/css/smiley.gif);
+}
+
+::marker { /*ul이나 ol의 부호를 문자로 취급하면서 속성 변경 */
+  color: red;
+  font-size: 23px;
+}
+
+::selection { /*커서를 클릭하거나 드래그시 선택 됨 */
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<p id="p1">
+	가나다라마바사 <br/>
+	가나다라마바사 <br/>
+	가나다라마바사
+</p>
+
+<p id="p2">
+	abcdefghijklmn
+</p>
+
+<h1 id="id1">This is a heading</h1>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+</body>
+</html>

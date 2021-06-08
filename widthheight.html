@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>width-height</title>
+<style>
+div#div1 {
+  height: 100px; /*원래 height는 내용물만큼만 차지 */
+  width: 500px; /*div의 width는 원래 100%인테  지정 ,브라우져가 적어지면 좌우스크롤바 생김*/
+  background-color: powderblue;
+}
+
+div#div2 {
+  max-width: 500px; /*좌우 스크롤바를 만들지 않기 위해 사용,높이를 변경하여 수용 */
+  height: 100px;
+  background-color: powderblue;
+  margin-top : 200px;
+}
+</style
+</head>
+<body>
+
+<h2>Set the height and width of an element</h2>
+
+<div id="div1">This div element has a height of 100px and a width of 500px.</div>
+
+<div id="div2">This div element has a height of 100px and a max-width of 500px.</div>
+</body>
+</html>

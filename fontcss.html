@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Font Css</title>
+<style>
+#p1 {
+	 font-family: "Times New Roman", Times, serif;  /*글꼴은 없을것을 대비하여 보통 3개 사용 */
+}
+p.normal {
+	font-style : normal; /*정상 기울임체 default */
+}
+p.italic {
+  font-style: italic; /*기울어진 글씨*/
+}
+
+p.oblique {
+  font-style: oblique; /*기울어진 글씨*/
+}
+
+#id1 {
+	font-size: 40px; /*글자 크기 */
+}
+#id2 {
+	font-size: 30px;
+	font-variant : small-caps /*소문자를 적은 대문자로 변환 */
+}
+#id3 {
+	 font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<p id="p1">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+
+<h1 id="id1">This is heading 1</h1>
+<h2 id="id2">This is heading 2</h2>
+<p id="id3">This is a paragraph.</p>
+
+</body>
+</html>

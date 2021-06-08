@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Css</title>
+<style>
+table {
+  border-collapse: collapse; /*겹치는 테두리 통합 */
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /*테두리선을 아래쪽에만 줌 */
+}
+tr:hover { /*tr에 마우스를 갖다 댈시를 나타내는 가상 클래스 */
+	background-color:#f5f5f5;
+}
+tr:nth-child(even) { /*짝수에 해당하는 tr을 나타내는 상태로 가상 클래스 사용 */
+	background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+</body>
+</html>

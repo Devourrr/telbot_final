@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combinator(셀렉터 결합)</title>
+<style>
+div#div1 p { /*조상과 후손관계 셀렉터 */
+  background-color: yellow;
+}
+
+div#div2 > p { /*부모와 자식 관계 셀렉터 */
+  background-color: yellow;
+}
+
+div#div3 + p { /*div의 바로 다음에 오는 형제 p */
+  background-color: yellow;
+}
+
+div#div4 ~ p { /*div의 뒤에 나오는 모든 형제들 */
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+<p>Paragraph 4. Not in a div.</p>
+
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div id="div4">
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</body>
+</html>

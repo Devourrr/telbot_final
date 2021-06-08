@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>width와 max-width</title>
+<style>
+div.ex1 {
+  width: 700px; /*고정 너비 */
+  margin: auto; /*수평중앙 정렬 */
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 700px; /*최대 너비로 그 이하는 가변 */
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<div class="ex1">
+	This div element has width: 500px;
+	This div element has width: 500px;
+	This div element has width: 500px;
+</div>
+<br>
+
+<div class="ex2">
+	This div element has width: 500px;This div element has width: 500px;This div element has width: 500px;
+</div>
+</body>
+</html>

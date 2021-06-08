@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overflow</title>
+<style>
+div#div1 {
+	background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: visible;  /*default*/
+}
+div#div2 {
+	background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: hidden; 
+    margin-top : 300px;
+}
+div#div3 {
+	background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<div id="div1">
+You can use the overflow property when you want<br/>
+ to have better control of the layout.<br/>
+ The overflow property specifies what happens if content overflows an element's box.
+</div>
+<div id="div2">
+You can use the overflow property when you want<br/>
+ to have better control of the layout.<br/>
+ The overflow property specifies what happens if content overflows an element's box.
+</div>
+<br/><br/>
+<div id="div3">
+You can use the overflow property when you want<br/>
+ to have better control of the layout.<br/>
+ The overflow property specifies what happens if content overflows an element's box.
+</div>
+</body>
+</html>

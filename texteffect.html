@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text에 효과 주기</title>
+<style>
+p.test1 {
+  white-space: nowrap; /*줄바꿈 하지 말것 br로만 줄바꿈 */
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis; /*감춰진 내용을  ...로 표시 */
+}
+p.test2 {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word; /*단어의 줄바꾸기를 가능케 함 */
+}
+
+p.test3 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: keep-all; /*단어를 끊어 사용시 -을 기준으로 분할 */
+}
+
+p.test4 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: break-all; /*단어를 끊어 사용시 아무 문자나 가능*/
+}
+
+p.test5 {
+  writing-mode: vertical-rl; /*문장 수직 배치 */
+}
+</style>
+</head>
+<body>
+
+<h2>text-overflow: ellipsis:</h2>
+<p class="test1">This is some long text that will not fit in the box</p>
+
+<p class="test2"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword.
+ The long word will break and wrap to the next line.</p>
+ 
+ <p class="test3">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+<p class="test4">This paragraph contains some text. The lines will break at any character.</p>
+
+<p class="test5">Some text with writing-mode: vertical-rl.</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text CSS</title>
+<style>
+body {
+	color : blue; /*글자색 */
+}
+h1 {
+	color : green;
+	text-align: center;
+}
+#p1 {
+	text-align: left; /*기본은 left로 안적어 줘도 됨 */
+	text-transform: uppercase; /*대문자로 변환 */
+}
+#p2 {
+	text-align: right;
+	text-transform: lowercase; /*소문자로 변환 */
+}
+
+h1#hid1 {
+  text-decoration: overline;
+}
+
+h2#hid2 {
+  text-decoration: line-through;
+}
+
+h3#hid3 {
+  text-decoration: underline;
+}
+
+#hid4 {
+	text-shadow: 2px 2px 5px red; /*x-offset,y-offset,blur,색 */
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<p id="p1">This is an ordinary paragraph. Notice that this text is blue.</p>
+<p id="p2">Another paragraph.</p>
+
+<h1 id="hid1">This is heading 1</h1>
+<h2 id="hid2">This is heading 2</h2>
+<h3 id="hid3">This is heading 3</h3>
+
+<h2 id="hid4">Text-shadow effect!</h2>
+</body>
+</html>

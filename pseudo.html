@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가상클래스</title>
+<style>
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p { /*div에 마우스를 갖다 댄 상태를 나타내는 가상클래스 :hover를 이용 */
+  display: block;
+}
+
+p:first-child {
+  color: blue;
+} 
+</style>
+</head>
+<body>
+
+<div>Hover over me to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+</body>
+</html>

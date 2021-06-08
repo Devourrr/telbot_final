@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inline-block</title>
+<style>
+.nav {
+	 background-color: yellow; 
+  	 list-style-type: none;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+}
+
+.nav li { /*클래스 nav엘리먼트의 후손인 li엘리먼트 */
+	 display: inline-block; /*inline성격인 내용만큼 차지하고 일렬배치,block성격인 크기 갖고 margin padding가능 */
+  	 font-size: 20px;
+     padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h3>Inline block</h3>
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+
+</body>
+</html>

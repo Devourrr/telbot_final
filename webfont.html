@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>web font</title>
+<style> 
+@font-face {  /*web server에 설치한 font를 브라우져가 다운받아 사용하게 하는 css 규칙 */
+   font-family: myFirstFont;
+   src: url(https://www.w3schools.com/css/sansation_light.woff);
+}
+
+* { /*모든 태그에서 다음 폰트를 사용 */
+   font-family: myFirstFont;
+}
+</style>
+</head>
+<body>
+
+<h1>The @font-face Rule</h1>
+<div>
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
+</body>
+</html>
